@@ -35,68 +35,98 @@
 
 // Сборник задач Златопольский
 //2.2
-try
-{
-    Console.Write("Введите килограмы: ");
-    double kg = double.Parse(Console.ReadLine());
-    double c = kg / 10;
-    Console.WriteLine($"{kg}кг = {c}ц");
-}
-catch(Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+//try
+//{
+//    Console.Write("Введите килограмы: ");
+//    double kg = double.Parse(Console.ReadLine());
+//    double c = kg / 10;
+//    Console.WriteLine($"{kg}кг = {c}ц");
+//}
+//catch(Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
 
-//2.3
-try
-{
-    Console.Write("Введите килограмы: ");
-    double kg = double.Parse(Console.ReadLine());
-    double t = kg / 1000;
-    Console.WriteLine($"{kg}кг = {t}т");
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+////2.3
+//try
+//{
+//    Console.Write("Введите килограмы: ");
+//    double kg = double.Parse(Console.ReadLine());
+//    double t = kg / 1000;
+//    Console.WriteLine($"{kg}кг = {t}т");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
 
-//2.4
-try
-{
-    Console.Write("Введите метры: ");
-    double m = double.Parse(Console.ReadLine());
-    double km = m / 1000;
-    Console.WriteLine($"{m}метров = {km}километров");
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+////2.4
+//try
+//{
+//    Console.Write("Введите метры: ");
+//    double m = double.Parse(Console.ReadLine());
+//    double km = m / 1000;
+//    Console.WriteLine($"{m}метров = {km}километров");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
 
-//2.5
-try
-{
-    int d = 234;
-    int w = d / 7;
-    Console.WriteLine($"Прошло {w} недель");
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+////2.5
+//try
+//{
+//    int d = 234;
+//    int w = d / 7;
+//    Console.WriteLine($"Прошло {w} недель");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
 
 //2.6
-try {
-    Console.Write("Введите количество секунд: ");
-    int n = int.Parse(Console.ReadLine());
-    int hours = n / 3600;
-    Console.WriteLine($"а) Полных часов прошло: {hours}");
+//try {
+//    Console.Write("Введите количество секунд: ");
+//    int n = int.Parse(Console.ReadLine());
+//    int hours = n / 3600;
+//    Console.WriteLine($"а) Полных часов прошло: {hours}");
 
-    int minutes = (n % 3600) / 60;
-    Console.WriteLine($"б) Полных минут с начала часа: {minutes}");
+//    int minutes = (n % 3600) / 60;
+//    Console.WriteLine($"б) Полных минут с начала часа: {minutes}");
 
-    int seconds = n % 60;
-    Console.WriteLine($"в) Полных секунд с начала минуты: {seconds}");
+//    int seconds = n % 60;
+//    Console.WriteLine($"в) Полных секунд с начала минуты: {seconds}");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
+// ЗЗадание
+//try
+//{
+//    Console.Write("Введите четырёхзначное число: ");
+//    int n = int.Parse(Console.ReadLine());
+//    int a = n % 10;
+//    int b = n % 100 / 10;
+//    int c = n % 1000 / 100;
+//    int d = n / 1000;
+//    Console.WriteLine($"{a + b + c + d}");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
+
+// Задание 3.6
+try
+{
+    Console.Write("Введите номер места (от 1 до 36): ");
+    int seat = int.Parse(Console.ReadLine());
+
+    int coupe = (seat + 3) / 4;
+
+    Console.WriteLine($"Номер купе: {coupe}");
 }
 catch (Exception ex)
 {
