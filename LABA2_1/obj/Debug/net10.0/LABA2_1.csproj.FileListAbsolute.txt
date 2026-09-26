@@ -1,0 +1,14 @@
+C:\Users\welto\OneDrive\Desktop\LABA2_1\bin\Debug\net10.0\LABA2_1.exe
+C:\Users\welto\OneDrive\Desktop\LABA2_1\bin\Debug\net10.0\LABA2_1.deps.json
+C:\Users\welto\OneDrive\Desktop\LABA2_1\bin\Debug\net10.0\LABA2_1.runtimeconfig.json
+C:\Users\welto\OneDrive\Desktop\LABA2_1\bin\Debug\net10.0\LABA2_1.dll
+C:\Users\welto\OneDrive\Desktop\LABA2_1\bin\Debug\net10.0\LABA2_1.pdb
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\LABA2_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\LABA2_1.AssemblyInfoInputs.cache
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\LABA2_1.AssemblyInfo.cs
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\LABA2_1.csproj.CoreCompileInputs.cache
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\LABA2_1.dll
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\refint\LABA2_1.dll
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\LABA2_1.pdb
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\LABA2_1.genruntimeconfig.cache
+C:\Users\welto\OneDrive\Desktop\LABA2_1\obj\Debug\net10.0\ref\LABA2_1.dll
