@@ -124,7 +124,7 @@
 //{
 //    double h = 0.2;
 //    Console.WriteLine("|   x   |   y   |");
-//        Console.WriteLine("-----------------");
+//    Console.WriteLine("-----------------");
 //    for (double x = -1; x <= 2; x = +0.3)
 //    {
 //        double y;
@@ -136,7 +136,7 @@
 //                y += Math.Pow(x, k) / (15 - k * k);
 //            }
 //        }
-//        else y = Math.Exp(3.5*x);
+//        else y = Math.Exp(3.5 * x);
 //        Console.WriteLine($"|   {x:f1}   |   {y:f2}   |");
 //    }
 //}
@@ -171,6 +171,35 @@ try
     for (int n = 11; n <= 99; n++)
     {
         Console.WriteLine($"{n}^2 = {n * n}");
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+// 21 вариант, Вычисление бесконечных сумм
+
+
+// 21 вариант, средний уровень. Табулирование функций
+try
+{
+    double h = 0.2;
+    Console.WriteLine("|   x   |   y   |");
+    Console.WriteLine("-----------------");
+
+    for (double x = -1.5; x <= 1.5; x += h)
+    {
+        double y;
+        if (x > 1)
+        {
+            y = x + Math.Sqrt(1 + Math.Abs(Math.Cos(x)));
+        }
+        else if (x >= -0.5)
+        {
+            y = x;
+        }
+        else y = Math.Pow(x, 2) - 2;
+        Console.WriteLine($"|   {x:f1}   |   {y:f2}   |");
     }
 }
 catch (Exception ex)
