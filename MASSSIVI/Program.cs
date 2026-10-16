@@ -51,20 +51,38 @@
 //{
 //    Console.WriteLine(e.Message);
 //}
-
-try
-{
-    Console.Write("Введите n");
-    int n = int.Parse(Console.ReadLine());
-    Random rnd = new Random();
-    int[] mas = new int[n];
-    for (int i = 0; i < mas.Length; i++)
-    {
-        mas[i] = rnd.Next(-10, 11);
-        Console.Write($"{mas[i]} ");
-    }
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+//try
+//{
+//    Console.Write("Введите n");
+//    int n = int.Parse(Console.ReadLine());
+//    Random rnd = new Random();
+//    int[] mas = new int[n];
+//    for (int i = 0; i < mas.Length; i++)
+//    {
+//        mas[i] = rnd.Next(-10, 11);
+//        Console.Write($"{mas[i]} ");
+//    }
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
+//try
+//{
+//    Console.Write("Введите n:");
+//    int n = int.Parse(Console.ReadLine());
+//    int[] mas = new int[n];
+//    Random rnd = new Random();
+//    int sum = 0;
+//    for (int i = 0; i < mas.Length; i++)
+//    {
+//        mas[i] = rnd.Next(-13,12);
+//        Console.Write($"{mas[i]} ");
+//        sum += mas[i];
+//    }
+//    Console.WriteLine($"Сумма = {sum}");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}

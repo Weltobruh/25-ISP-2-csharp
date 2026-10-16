@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="BALA_2.3/BALA_2.3.csproj" Id="8d876084-d8d9-4079-a85f-4161038bc395" />
+  <Project Path="BlackJackCsharpedition/BlackJackCsharpedition.csproj" Id="468a9d2b-94cc-4cfe-8985-b39a3d7e815e" />
   <Project Path="Lab11_Belskih/Lab11_Belskih.csproj" />
   <Project Path="laba24/laba24.csproj" Id="b9e41de8-f48b-4277-8369-d6e41d9c198f" />
   <Project Path="LABA25/LABA25.csproj" Id="65109886-0a1b-4596-b21c-2b89db04846d" />
