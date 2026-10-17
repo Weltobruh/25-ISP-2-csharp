@@ -76,7 +76,7 @@
 //    int sum = 0;
 //    for (int i = 0; i < mas.Length; i++)
 //    {
-//        mas[i] = rnd.Next(-13,12);
+//        mas[i] = rnd.Next(-13, 12);
 //        Console.Write($"{mas[i]} ");
 //        sum += mas[i];
 //    }
@@ -86,3 +86,45 @@
 //{
 //    Console.WriteLine(ex.Message);
 //}
+//try
+//{
+//    Console.Write("Введите n:");
+//    int n = int.Parse(Console.ReadLine());
+//    int[] mas = new int[n];
+//    Random rnd = new Random();
+//    long prod = 1;
+//    for (int i = 0; i < mas.Length; i++)
+//    {
+//        mas[i] = rnd.Next(-19, 27);
+//        Console.Write($"{mas[i]} ");
+//        if (mas[i] % 2 != 0)
+//        {
+//            prod *= mas[i];
+//        }
+//    }
+//    Console.WriteLine();
+//    Console.WriteLine($"Произведение элементов = {prod}");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
+try
+{
+    Console.Write("Введите n:");
+    int n = int.Parse(Console.ReadLine());
+    int[] mas = new int[n];
+    int sum = 0;
+
+    for (int i = 0; i < mas.Length; i++)
+    {
+        mas[i] = int.Parse(Console.ReadLine());
+        if (mas[i] == 0) sum++;
+    }
+    Console.WriteLine($"нулей в массиве = {sum}");
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
