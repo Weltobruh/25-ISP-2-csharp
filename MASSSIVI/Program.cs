@@ -253,51 +253,39 @@
 //{
 //    Console.Write($"{mas2[i]:F2} ");
 //}
+//Random random = new Random();
+//int[] mas1 = new int[3];
+//for (int i = 0; i < 3; i++)
+//{
+//    mas1[i] = random.Next(10, 100);
+//    Console.Write($"{mas1[i]} ");
+//}
+//Console.WriteLine();
+//string[] str = new string[3];
+//for (int i = 0; i < str.Length; i++)
+//{
+//    str[i] = Convert.ToString(mas1[i], 2);
+//    Console.WriteLine($"{str[i]} ");
+//}
 
 Random random = new Random();
-double[] mas1 = new double[random.Next(10, 20)];
-double[] mas2 = new double[random.Next(10, 20)];
-
-
-
-
-
-
-
-
-
-
-try
+double[] mas = new double[5];
+Console.Write("Массив: ");
+for (int i = 0; i < mas.Length; i++)
 {
-    Console.Write("Введите вещественное число R: ");
-    double r = double.Parse(Console.ReadLine());
-    Console.Write("Введите размерность массива n: ");
-    int n = int.Parse(Console.ReadLine());
-    double[] mas = new double[n];
-    Random rnd = new Random();
-    Console.WriteLine("Сгенерированный массив:");
-    for (int i = 0; i < mas.Length; i++)
-    {
-        mas[i] = Math.Round(rnd.NextDouble() * 100 - 50, 2);
-        Console.Write($"{mas[i]}  ");
-    }
-    int minIndex = 0;
-    double minDiff = Math.Abs(mas[0] - r);
-    for (int i = 1; i < mas.Length; i++)
-    {
-        double currentDiff = Math.Abs(mas[i] - r);
-        
-        if (currentDiff < minDiff)
-        {
-            minDiff = currentDiff;
-            minIndex = i;
-        }
-    }
-    Console.WriteLine($"Наиболее близкий элемент к числу {r}:");
-    Console.WriteLine($"Индекс (номер ячейки): {minIndex}");
-    Console.WriteLine($"Значение элемента: {mas[minIndex]}");
+    mas[i] = random.NextDouble() * 100;
+    Console.Write($"{mas[i]:F2}  ");
 }
-catch (Exception ex)
+Console.WriteLine();
+double R = random.NextDouble() * 100;
+Console.WriteLine($"Число R: {R:F2}");
+int index = 0;
+for (int i = 1; i < mas.Length; i++)
 {
-    Console.WriteLine($"Ошибка: {ex.Message}");
+    if (Math.Abs(mas[i] - R) < Math.Abs(mas[index] - R))
+    {
+        index = i;
+    }
 }
+
+Console.WriteLine($"Ближайшее значение: {mas[index]:F2}; его индекс: {index}");
