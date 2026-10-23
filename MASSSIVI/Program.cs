@@ -268,24 +268,47 @@
 //    Console.WriteLine($"{str[i]} ");
 //}
 
-Random random = new Random();
-double[] mas = new double[5];
-Console.Write("Массив: ");
-for (int i = 0; i < mas.Length; i++)
-{
-    mas[i] = random.NextDouble() * 100;
-    Console.Write($"{mas[i]:F2}  ");
-}
-Console.WriteLine();
-double R = random.NextDouble() * 100;
-Console.WriteLine($"Число R: {R:F2}");
-int index = 0;
-for (int i = 1; i < mas.Length; i++)
-{
-    if (Math.Abs(mas[i] - R) < Math.Abs(mas[index] - R))
-    {
-        index = i;
-    }
-}
+//Random random = new Random();
+//double[] mas = new double[5];
+//Console.Write("Массив: ");
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] = random.NextDouble() * 100;
+//    Console.Write($"{mas[i]:F2}  ");
+//}
+//Console.WriteLine();
+//double R = random.NextDouble() * 100;
+//Console.WriteLine($"Число R: {R:F2}");
+//int index = 0;
+//for (int i = 1; i < mas.Length; i++)
+//{
+//    if (Math.Abs(mas[i] - R) < Math.Abs(mas[index] - R))
+//    {
+//        index = i;
+//    }
+//}
 
-Console.WriteLine($"Ближайшее значение: {mas[index]:F2}; его индекс: {index}");
+//Console.WriteLine($"Ближайшее значение: {mas[index]:F2}; его индекс: {index}");
+
+//Random random = new Random();
+//int[] mas = new int[5];
+//Console.Write("Массив: ");
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] = random.Next(10, 100) * 100;
+//    String binary = Convert.ToString(mas[i], 2);
+//    Console.Write($"{binary:F2}  ");
+//}
+//Console.WriteLine();
+//double R = random.NextDouble() * 100;
+//Console.WriteLine($"Число R: {R:F2}");
+//int index = 0;
+//for (int i = 1; i < mas.Length; i++)
+//{
+//    if (Math.Abs(mas[i] - R) < Math.Abs(mas[index] - R))
+//    {
+//        index = i;
+//    }
+//}
+
+//Console.WriteLine($"Ближайшее значение: {mas[index]:F2}; его индекс: {index}");
