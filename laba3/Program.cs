@@ -48,27 +48,23 @@
 //    }
 //    Console.WriteLine("");
 //}
+// 3.3
 //try
 //{
-//    Console.WriteLine("Введите: ");
-//    int k = int.Parse(Console.ReadLine());
-//    double A = 1;
-//    for (int j = 1; j < k; j++)
+//    Console.Write("Введите n:");
+//    int n = int.Parse(Console.ReadLine());
+//    Console.Write("Введите x:");
+//    double x = double.Parse(Console.ReadLine());
+//    double s = 0;
+//    for (int i = 1; i < n; i++)
 //    {
-//        if (j == 3 || j == 4) continue;
-//        double s = 0;
-//        for (int i = j; i <= k; i++)
-//        {
-//            if (i == 1) continue;
-//            s += Math.Pow(i-5,1/3.0) / (i - 1);
-//        }
-//        A *= ((j - 4) * j / (j - 3)) * s;
+//        s += Math.Sin((2 * i - 1) * Math.Pow(x, 2 * i - 1));
 //    }
-//    Console.WriteLine($"S={A:F2}");
+//    Console.WriteLine($"s={s:f2}");
 //}
-//catch (Exception ex)
+//catch (Exception e)
 //{
-//    Console.WriteLine(ex.Message);
+//    Console.WriteLine(e.Message);
 //}
 //try
 //{
@@ -179,6 +175,23 @@ catch (Exception ex)
 }
 // 21 вариант, Вычисление бесконечных сумм
 
+try
+{
+    Console.Write("Введите n:");
+    int n = int.Parse(Console.ReadLine());
+    Console.Write("Введите x:");
+    double x = double.Parse(Console.ReadLine());
+    double s = 0;
+    for (int i = 1; i < n; i++)
+    {
+        s += x - (Math.Pow(x, 3) / 3) + (Math.Pow(x, 5) / 5) - (Math.Pow(x, 7) / 7);
+    }
+    Console.WriteLine($"s={s:f2}");
+}
+catch (Exception e)
+{
+    Console.WriteLine(e.Message);
+}
 
 // 21 вариант, средний уровень. Табулирование функций
 try
