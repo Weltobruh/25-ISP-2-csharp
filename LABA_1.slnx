@@ -1,5 +1,7 @@
 <Solution>
   <Project Path="BALA_2.3/BALA_2.3.csproj" Id="8d876084-d8d9-4079-a85f-4161038bc395" />
+  <Project Path="bezponatiya/bezponatiya.csproj" Id="0370d654-597c-4da5-8ea0-3c16bd258ac2" />
+  <Project Path="BIBLIA/BIBLIA.csproj" Id="69cc6b87-caa9-412a-8a7b-23bd72bf49dc" />
   <Project Path="BlackJackCsharpedition/BlackJackCsharpedition.csproj" Id="468a9d2b-94cc-4cfe-8985-b39a3d7e815e" />
   <Project Path="ch_drun/ch_drun.csproj" Id="d1a98219-cdf9-44df-8fb7-6ca394c4f312" />
   <Project Path="dvuhassivi/dvuhassivi.csproj" Id="25f5dbb1-d9a5-400d-abeb-9dc3ed78d4fd" />
