@@ -14,27 +14,25 @@ namespace BIBLIA
 
     public class Class22
     {
-        public static long Alikhafaman(int[,] matrix)
+        public static int Alikhafaman(int[,] mas)
         {
-            int maxval = matrix[0,0];
+            int max = mas[0, 0];
+            int x = 0, y = 0;
 
-            int maxrow = 0;
-            int maxcol = 0;
-
-            for (int i = 0; i < matrix.Length; i++)
+            for (int i = 0; i < mas.GetLength(0); i++)
             {
-                for (int j = 0; j < matrix.Length; j++)
+                for (int j = 0; j < mas.GetLength(1); j++)
                 {
-                    if(matrix[i,j] > maxval)
+                    if (mas[i, j] > max)
                     {
-                        maxval = matrix[i,j];
-
-                        maxrow = i;
-                        maxcol = j;
+                        max = mas[i, j];
+                        x = i;
+                        y = j;
                     }
                 }
             }
-            return maxrow + maxcol;
+
+            return x + y;
         }
     }
 }
