@@ -31,7 +31,6 @@ namespace BIBLIA
                     }
                 }
             }
-
             return x + y;
         }
     }
