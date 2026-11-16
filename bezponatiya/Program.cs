@@ -14,3 +14,32 @@ Class22.Alikhafaman(matrix)
 //}
 //Console.WriteLine();
 //Console.WriteLine($"{Class0001.MultiMatrix(mas)}");
+
+
+
+using BIBLIA;
+
+int[,] mas = new int[7, 4];
+
+for (int i = 0; i < 7; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        Console.Write($"mas[{i},{j}] = ");
+        mas[i, j] = Convert.ToInt32(Console.ReadLine());
+    }
+}
+
+Console.WriteLine();
+
+for (int i = 0; i < 7; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        Console.Write(mas[i, j] + "\t");
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine();
+Console.WriteLine($"{Class0001.MultiMatrix(mas)}");
