@@ -1,11 +1,4 @@
-﻿using BIBLIA;
-Random random = new Random();
-int[,] mas 
-
-Class22.Alikhafaman(matrix)
-    
-    
-//Random random = new Random();
+﻿//Random random = new Random();
 //int[] mas = new int[random.Next(10, 30)];
 //for (int i = 0; i < mas.Length; i++)
 //{
@@ -42,4 +35,4 @@ for (int i = 0; i < 7; i++)
 }
 
 Console.WriteLine();
-Console.WriteLine($"{Class0001.MultiMatrix(mas)}");
+Console.WriteLine($"{Class22.Alikhafaman(mas)}");
