@@ -103,7 +103,7 @@ for (int i = 0; i < efirs.Length; i++)
     Console.WriteLine();
 }
 
-Console.WriteLine("--- Все введенные сеансы ---");
+Console.WriteLine("Все введенные сеансы: ");
 foreach (var efir in efirs)
 {
     Console.WriteLine($"Позывной: {efir.pozivnoj}, Частота: {efir.chastota}, Дата: {efir.data}, Время: {efir.start} - {efir.finish}, Групп: {efir.group}");
@@ -118,7 +118,7 @@ TimeOnly timeFrom = TimeOnly.Parse(Console.ReadLine()!);
 Console.Write("Введите конечное время интервала (в формате чч:мм:сс): ");
 TimeOnly timeTo = TimeOnly.Parse(Console.ReadLine()!);
 
-Console.WriteLine($"\nСеансы связи за {searchDate} в интервале с {timeFrom} до {timeTo}:");
+Console.WriteLine($"\nСеансы связи за {searchDate} в интервале с {timeFrom} до {timeTo}: ");
 bool found = false;
 
 foreach (var efir in efirs)
