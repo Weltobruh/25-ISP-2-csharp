@@ -80,3 +80,43 @@
 //Console.WriteLine(time2.Second);
 //Console.WriteLine(time2.Ticks);
 
+// 1 вариант средний
+DateTime dateNow = DateTime.Now;
+Console.WriteLine($"t: {dateNow.ToString("dd.MM.yyyy HH:mm:ss")}");
+Efir[] efirs = new Efir[6];
+
+for (int i = 0; i < efirs.Length; i++)
+{
+    Console.Write("Введите позывной: ");
+    efirs[i].pozivnoj = Console.ReadLine()!;
+    Console.Write("Введите частоту (целое число): ");
+    efirs[i].chastota = int.Parse(Console.ReadLine()!);
+    Console.Write("Введите дату сеанса (в формате гггг-мм-дд): ");
+    efirs[i].data = DateOnly.Parse(Console.ReadLine()!);
+    Console.Write("Введите время начала сеанса (в формате чч:мм:сс): ");
+    efirs[i].start = TimeOnly.Parse(Console.ReadLine()!);
+    Console.Write("Введите время окончания сеанса (в формате чч:мм:сс): ");
+    efirs[i].finish = TimeOnly.Parse(Console.ReadLine()!);
+    Console.Write("Введите количество переданных групп (целое число): ");
+    efirs[i].group = int.Parse(Console.ReadLine()!);
+
+    Console.WriteLine();
+        }
+        foreach (var efir in efirs)
+        {
+            Console.WriteLine($"Позывной: {efir.pozivnoj}, Частота: {efir.chastota}, Дата: {efir.data}, Время: {efir.start} - {efir.finish}, Групп: {efir.group}");
+        }
+struct Efir
+{
+    public string pozivnoj;
+    public int chastota;
+    public DateOnly data;
+    public TimeOnly start;
+    public TimeOnly finish;
+    public int group;
+}
+
+
+
+
+
