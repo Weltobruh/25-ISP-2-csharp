@@ -101,11 +101,39 @@ for (int i = 0; i < efirs.Length; i++)
     efirs[i].group = int.Parse(Console.ReadLine()!);
 
     Console.WriteLine();
-        }
-        foreach (var efir in efirs)
-        {
-            Console.WriteLine($"Позывной: {efir.pozivnoj}, Частота: {efir.chastota}, Дата: {efir.data}, Время: {efir.start} - {efir.finish}, Групп: {efir.group}");
-        }
+}
+
+Console.WriteLine("Все введенные сеансы: ");
+foreach (var efir in efirs)
+{
+    Console.WriteLine($"Позывной: {efir.pozivnoj}, Частота: {efir.chastota}, Дата: {efir.data}, Время: {efir.start} - {efir.finish}, Групп: {efir.group}");
+}
+
+Console.Write("Введите дату для поиска (в формате гггг-мм-дд): ");
+DateOnly searchDate = DateOnly.Parse(Console.ReadLine()!);
+
+Console.Write("Введите начальное время интервала (в формате чч:мм:сс): ");
+TimeOnly timeFrom = TimeOnly.Parse(Console.ReadLine()!);
+
+Console.Write("Введите конечное время интервала (в формате чч:мм:сс): ");
+TimeOnly timeTo = TimeOnly.Parse(Console.ReadLine()!);
+
+Console.WriteLine($"\nСеансы связи за {searchDate} в интервале с {timeFrom} до {timeTo}: ");
+bool found = false;
+
+foreach (var efir in efirs)
+{
+    if (efir.data == searchDate && efir.start >= timeFrom && efir.finish <= timeTo)
+    {
+        Console.WriteLine($"Позывной: {efir.pozivnoj}, Частота: {efir.chastota}, Время: {efir.start} - {efir.finish}, Групп: {efir.group}");
+        found = true;
+    }
+}
+if (!found)
+{
+    Console.WriteLine("Выходов на связь по заданным параметрам не найдено.");
+}
+
 struct Efir
 {
     public string pozivnoj;
@@ -115,8 +143,3 @@ struct Efir
     public TimeOnly finish;
     public int group;
 }
-
-
-
-
-
